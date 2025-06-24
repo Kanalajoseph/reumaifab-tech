@@ -9,13 +9,23 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="navdiv">
-            <div class="logo"><a href="#">Reumiafab Tech</a></div>
+        <div class="sidebar">
             <ul>
+                <li onclick=hideSidebar()><a href="#"><img src="assets/close.png" alt=""></a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="navdiv">
+            <div class="logo"><a href="#">Reumiafab Tech</a></div>
+            <ul>
+                <li class="hideOnMobile"><a href="#">Home</a></li>
+                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="#">Services</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><img src="assets/menu.png" alt=""></a></li>
             </ul>
         </div>
 
@@ -34,5 +44,7 @@
         <h2>Contact Us</h2>
         <p>Email us at:</p>
     
+    
+    <script src="script.js"></script>
 </body>
 </html>
