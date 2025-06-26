@@ -7,6 +7,7 @@
 
 body {
     min-height: 100vh;
+    background: linear-gradient(135deg, #fff 60%, #f8f9fa 100%);
 }
 
 .navbar {
