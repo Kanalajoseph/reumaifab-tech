@@ -74,3 +74,7 @@
     padding: 20px;
   }
 }
+.services-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  padding: 20px;
+}

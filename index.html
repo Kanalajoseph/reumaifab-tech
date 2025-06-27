@@ -6,36 +6,40 @@
     <title>Reumiafab Tech</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaquerie.css">
+    
 </head>
 
 <body>
     <nav class="navbar">
         <div class="sidebar">
             <ul>
-                <li onclick=hideSidebar()><a href="#"><img src="assets/close.png" alt=""></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li onclick="hideSidebar()"><a href="#"><img src="assets/close.png" alt=""></a></li>
+                <li><a href="#banner" class="nav-link" data-target="banner">Home</a></li>
+                <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+                <li><a href="#services" class="nav-link" data-target="services">Services</a></li>
+                <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
             </ul>
         </div>
         <div class="navdiv">
-            <div class="logo" style="display: flex; align-items: center;">
-                <a href="/" style="display: flex; align-items: center; text-decoration: none;">
-                    <img src="assets/logo.jpg" alt="Red and white modern logo with geometric shapes above the text RELMAIFAB TECH Lets get you intergrated on a black background, conveying a bold and professional tone" style="height:40px; width:auto; margin-right:10px;">
-                    <span style="font-weight: bold; color: #dbd1d1;">Reumiafab Tech</span>
-                </a>
-            </div>
+            <div class="logo"><a href="#">Reumiafab Tech</a></div>
             <ul>
-                <li class="hideOnMobile"><a href="#">Home</a></li>
-                <li class="hideOnMobile"><a href="#">About</a></li>
-                <li class="hideOnMobile"><a href="#">Services</a></li>
-                <li class="hideOnMobile"><a href="#">Contact</a></li>
-                <li class="menu-btn" onclick=showSidebar()><a href="#"><img src="assets/menu.png" alt=""></a></li>
+                <li class="hideOnMobile"><a href="#banner" class="nav-link" data-target="banner">Home</a></li>
+                <li class="hideOnMobile"><a href="#about" class="nav-link" data-target="about">About</a></li>
+                <li class="hideOnMobile"><a href="#services" class="nav-link" data-target="services">Services</a></li>
+                <li class="hideOnMobile"><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                <li class="menu-btn" onclick="showSidebar()"><a href="#"><img src="assets/menu.png" alt=""></a></li>
             </ul>
         </div>
-
     </nav>
+    
+    <!-- home Section -->
+    <section id="banner">
+        <div class="banner-content">
+            <h1>Welcome to Reumaifab Tech</h1>
+            <p>Your partner in innovative technology solutions.</p>
+            <a href="#" class="btn">Explore Our Services</a>
+        </div>
+    </section>
 
     <!-- Services Section -->
     <section id="services" class="services-section"></section>
@@ -101,7 +105,7 @@ Research is what we do and stretch on various ideas to test product suitability 
 
 We operate as a conglomerate as the demand for tech products continues to increase, we have covered all sectors of tech, media, and digital marketing through our different platforms such as the best online business directory Reumaifabbd.com Shop Africa an online trading platform having Chrisma eMarketers as the marketing body for all the marketing and branding needs.</p>
         
-        <section class="contact-section">
+        <section class="contact-section" id="contact">
         
         <div class="container">
         <h2>Contact Us</h2>
@@ -151,7 +155,6 @@ We operate as a conglomerate as the demand for tech products continues to increa
     <link rel="stylesheet" href="contact.css">
     <script src="script.js"></script>
 
-
-<link rel="stylesheet" href="services.css">    
+    <link rel="stylesheet" href="services.css">
 </body>
 </html>
