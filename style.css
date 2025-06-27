@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #b04187;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 15px;
@@ -83,4 +83,49 @@ li a img {
 .menu-btn {
     display: none;
     cursor: pointer;
+}
+#banner {
+    background-image:  url(assets/home.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-content h1 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.banner-content p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.banner-content a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b04187;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.banner-content a:hover {
+    background-color: #a0367a;
+    transition: background-color 0.5s ease;
+}
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
