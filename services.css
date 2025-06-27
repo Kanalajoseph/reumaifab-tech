@@ -1,0 +1,75 @@
+/* ---------- Variables for Reumaifab-inspired colors ---------- */
+:root {
+  --primary-bg: #f9fafc;      /* light neutral background */
+  --card-bg: #ffffff;         /* white card background */
+  --accent: #005eab;          /* rich blue accent (inspired by branding) */
+  --accent-light: #e7f1fb;    /* very light blue for hover/background */
+  --text-dark: #222222;
+  --text-muted: #555555;
+  --border: #dddddd;
+}
+
+/* ---------- Section & Title ---------- */
+.services-section {
+  background-color: var(--primary-bg);
+  padding: 60px 20px;
+  text-align: center;
+}
+.services-section h2 {
+  color: var(--text-dark);
+  font-size: 2.5rem;
+  margin-bottom: 0.3em;
+}
+.services-intro {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Services Grid ---------- */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  align-items: start;
+}
+
+/* ---------- Service Card ---------- */
+.service-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  background-color: var(--accent-light);
+}
+.service-card h3 {
+  font-size: 1.25rem;
+  color: var(--accent);
+  margin-bottom: 0.5em;
+}
+.service-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* ---------- Responsive Tweaks ---------- */
+@media (max-width: 600px) {
+  .services-section {
+    padding: 40px 15px;
+  }
+  .services-intro {
+    font-size: 1rem;
+  }
+  .service-card {
+    padding: 20px;
+  }
+}
