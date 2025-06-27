@@ -1,4 +1,4 @@
-/* ---------- Variables for Reumaifab-inspired colors ---------- */
+
 :root {
   --primary-bg: #f9fafc;      /* light neutral background */
   --card-bg: #ffffff;         /* white card background */
@@ -8,6 +8,7 @@
   --text-muted: #555555;
   --border: #dddddd;
 }
+
 
 /* ---------- Section & Title ---------- */
 .services-section {
